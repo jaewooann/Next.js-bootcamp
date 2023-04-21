@@ -24,10 +24,10 @@ const MenuItem = styled.p`
 `;
 
 const QQQ = [
-  {id: '/myfirebase', name: '나의파이어베이스'},
-  {id: '/openapis', name: '라이브강아지'},
-  {id: '/boards', name: '라이브게시판'},
-  {id: '/market', name: '라이브상품'},
+  // {id: '/myfirebase', name: '나의파이어베이스'},
+  {id: '/openapis', name: '강아지 OpenAPI'},
+  {id: '/boards', name: '라이브 게시판'},
+  {id: '/market', name: '라이브 상품'},
   {id: '/mypage', name: '마이페이지'}
 ];
 

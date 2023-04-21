@@ -50,15 +50,20 @@ export default function LayoutHeader() {
   const [logoutUser] = useMutation<Pick<IMutation, 'logoutUser'>>(LOGOUT_USER);
 
   const onClickLogo = () => {
-    void router.push('/boards');
+    void router.push('/');
   }
 
   const onClickLogin = () => {
     void router.push('/login');
   }
 
-  const onClickLogout = () => {
-    
+  const onClickLogout = async () => {
+    const result = await logoutUser()
+    const isLogout = result.data?.logoutUser;
+    if(isLogout) {
+      setAccessToken('');
+      void router.push('/login');
+    }
   }
 
   const onClickRegister = () => {

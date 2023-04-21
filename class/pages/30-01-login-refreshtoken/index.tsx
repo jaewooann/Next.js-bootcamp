@@ -7,6 +7,7 @@ import { useRecoilState } from "recoil";
 import { accessTokenState } from "../../src/commons/store";
 import { useRouter } from "next/router";
 
+// example 5초 만료 (테스트)
 const LOGIN_USER_EXAMPLE = gql`
   mutation loginUserExample($email: String!, $password: String!) {
     loginUserExample(

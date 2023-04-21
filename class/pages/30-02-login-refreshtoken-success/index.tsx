@@ -24,10 +24,10 @@ export default function LoginSuccessPage() {
 
   const onClickButton = async () => {
     const result = await client.query({
-      query: FETCH_USER_LOGGED_IN
+      query: FETCH_USER_LOGGED_IN,
     });
     console.log(result);
-  }
+  };
 
   return (
     <button onClick={onClickButton}>클릭하세요</button>

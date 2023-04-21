@@ -1,4 +1,4 @@
-import { GraphQLClient, gql } from "graphql-request";
+import { GraphQLClient, gql } from 'graphql-request';
 
 const RESTORE_ACCESS_TOKEN = gql`
   mutation restoreAccessToken {
@@ -10,13 +10,13 @@ const RESTORE_ACCESS_TOKEN = gql`
 
 export const getAccessToken = async () => {
   try {
-    const graphqQLClient = new GraphQLClient('https://backend-practice.codebootcamp.co.kr/graphql',
+    const graphQLClient = new GraphQLClient('https://backendonline.codebootcamp.co.kr/graphql',
       { credentials: 'include' }
     );
-    const result = await graphqQLClient.request(RESTORE_ACCESS_TOKEN);
+    const result  = await graphQLClient.request(RESTORE_ACCESS_TOKEN);
     const newAccessToken = result.restoreAccessToken.accessToken;
     return newAccessToken;
   } catch(error) {
-    if (error instanceof Error) console.log(error.message);
+    if(error instanceof Error) console.log(error.message);
   }
 }

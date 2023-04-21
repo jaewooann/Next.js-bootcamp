@@ -56,7 +56,6 @@ export default function Login() {
         return;
       }
       setAccessToken(accessToken);
-      localStorage.setItem('accessToken', accessToken);
 
       void router.push('/');
 
