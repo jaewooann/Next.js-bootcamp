@@ -1,7 +1,7 @@
 Nextjs - bootcamp
-section04 - 리액트 기초
-section05 - 데이터 통신 (rest-api, graphql-api)
-section06 - 라우팅 및 렌더링
+section04 - 리액트 기초 
+section05 - 데이터 통신 (rest-api, graphql-api) 
+section06 - 라우팅 및 렌더링 
 section07 - 폴더 구조와 props 및 컴포넌트 재사용성
 section08 - 타입스크립트
 section09 - 프레임위크/라이브러리와 레이아웃 구조, 페이지 네이션
