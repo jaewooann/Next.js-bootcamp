@@ -1,4 +1,4 @@
-Nextjs - bootcamp <br />
+Nextjs - bootcamp (class project) <br />
 section04 - 리액트 기초  <br />
 section05 - 데이터 통신 (rest-api, graphql-api) <br />
 section06 - 라우팅 및 렌더링 <br />
